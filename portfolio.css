@@ -1,0 +1,241 @@
+
+
+html {
+    scroll-behavior: smooth;
+    color: white;
+
+}
+
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    background: #000224;
+    margin: 0;
+
+}
+
+
+header {
+
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    text-align: center;
+
+}
+
+header h3 {
+    text-align: center;
+}
+
+.intro
+{
+    opacity: 0;
+    animation: fadeIn 2s;
+    opacity: 1;
+    text-align: center;
+
+}
+
+@keyframes fadeIn
+{
+    0% {
+        opacity: 0;
+    }
+    25%
+    {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.50;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.section {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+}
+.section h2 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section h3 {
+    text-align: center;
+}
+
+.section p {
+    line-height: 2;
+    text-align: justify;
+    font-size: 25px;
+}
+
+
+.about-pic {
+  flex: 1;
+  height: auto;
+  max-width: 300px;
+  margin-left: 40px;
+  margin-top: 20px;
+  position: relative;
+  border: 2px solid white;
+}
+
+
+#about
+{
+    margin: auto;
+    padding: 1em;
+    width: 60%;
+    display: flex
+    }
+
+#about p
+{
+    flex: 1;
+    text-align: left;
+    max-width: calc(100% - 320px);
+    line-height: 1.6;
+    border-left: 2px solid #689bf2;
+    padding-left: 10px;
+}
+
+#projects
+{
+
+    display: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.overlay-container
+{
+  position: relative;
+  width: 300px;
+  height: 150px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+  box-sizing: border-box;
+  border: 2px solid white;
+}
+
+.project1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  width: 300px;
+  height: 150px;
+}
+
+.overlay-container:hover .image {
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
+
+}
+
+.overlay-container:hover .project1 {
+  opacity: 1;
+}
+
+.overlay {
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  gap: 100px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+
+}
+
+footer
+{
+    text-align: left;
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.next-row {
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    margin-top: 200px;
+    margin-right: auto;
+    transform: translate(-50%, -50%);
+}
+
+.next-row:hover .image {
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
+
+}
+
+.next-row:hover .project1 {
+  opacity: 1;
+}
+
+.button{
+    position: fixed;
+    top: 70%;
+    background-color: black;
+    margin: auto;
+    align-items: center;
+    border-radius: 6px;
+    margin-left: 75px;
+}
