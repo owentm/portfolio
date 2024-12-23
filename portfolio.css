@@ -231,11 +231,15 @@ footer
 }
 
 .button{
-    position: fixed;
-    top: 70%;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: black;
     margin: auto;
     align-items: center;
+    align-text: center;
     border-radius: 6px;
-    margin-left: 75px;
 }
